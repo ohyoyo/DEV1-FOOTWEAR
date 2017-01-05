@@ -9,11 +9,13 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 - [x] HTML *99%*
 - [x] CSS *86%*
 - [x] Javascript *54%*
+
 ### Functionality
 - [ ] Cookie
 - [ ] Add-to-cart Box
 - [ ] Search
 - [ ] Sign in & Sign up
+
 ### Scoring
 | Instruction             | Grade     |
 |-------------------------|-----------|
@@ -24,6 +26,7 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 | Following template      | /6        |
 | **Total**               | **/20**   |
 | ``BONUS``               | ``/2``    |
+
 ___
 ### Final Note
 Final note after correction by the teacher : `/20`
