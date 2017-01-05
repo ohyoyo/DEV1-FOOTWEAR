@@ -1,4 +1,376 @@
+* {
+    box-sizing: border-box;   
+}
+
+@font-face {
+    font-family: DINNextLTPro;
+    src: url('../font/DINNextLTPro-MediumCond.otf');
+}
+
 body {
     background-color: rgb(200, 207, 220);
-    margin: 50px;
+    margin: 50px auto;
+    font-family: DINNextLTPro;
+    width: 1280px;
+    
+}
+
+/* base header */
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    width: 100%;
+    height: 90px;
+    text-transform: uppercase;
+}
+
+/* end base header
+
+   header */
+header #logo {
+    background-image: url('../img/logo/logo_50x50.svg');
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    display: inline;
+    float: left;
+}
+
+header nav {
+    display: inline;
+    box-sizing: border-box;
+}
+header ul#left {
+    display: inline;
+    width: 100%;
+    font-size: 14px;
+    list-style: none;
+}
+
+header ul#left li {
+    margin-top: 40px;
+    float: left;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+header ul#left li a {
+    color: rgb(51, 51, 51);
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    color: rgb(0, 137, 207);
+    padding-bottom: 31px;
+    border-bottom: 4px solid rgb(0, 137, 207);
+}
+
+header ul#right {
+    font-size: 14px;
+    list-style: none;
+    float: right;
+}
+
+header ul#right li {
+    margin-top: 40px;
+    margin-left: 21px;
+    float: left;
+    margin-right: 21px;
+}
+
+header ul#right li a {
+    color: rgb(51, 51, 51);
+}
+
+header ul#right li a span {
+    color: rgb(0, 137, 207);
+}
+
+header ul#right li a span#search {
+    display: inline-block;
+    background-image: url('../img/header_icon_sprite.png');
+    width: 16px;
+    height: 16px;
+}
+header ul#right li a span#cart {
+    display: inline-block;
+    background-image: url('../img/header_icon_sprite.png');
+    background-position: 32px 0px;
+    width: 16px;
+    height: 16px;
+}
+header ul#right li a span#signin {
+    display: inline-block;
+    background-image: url('../img/header_icon_sprite.png');
+    background-position: 16px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+/* end header
+
+   base section top */
+section#top {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 610px;
+    overflow: hidden;
+}
+
+/* base section feat1 */
+section#feat1 {
+    background-color: rgb(255, 255, 255);
+    background-image: url('../img/bg/feat1bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+}
+/* base section feat2 */
+section#feat2 {
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+}
+
+/* base section social */
+section#social {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+}
+
+/* section top */
+section#top #shoe {
+    background-image: url('../img/nike/nike_shoes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 638px;
+    height: 296px;
+    padding: 305px 420px;
+    float: left;
+}
+
+section#top #container-box {
+    float: right;
+    margin-right: 166px;
+    margin-top: 104px;
+    margin-bottom: 104px;
+    width: 260px;
+    height: 402px;
+    color: rgb(51, 51, 51);
+}
+
+section#top #container-box #fav {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(228, 228, 228);
+    background-image: url('../img/svg/heart.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 40px;
+}
+
+section#top #container-box #fav:hover {
+    
+        background-color: rgb(51, 51, 51);
+        transition: all 1s;
+}
+
+section#top #container-box h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+section#top #container-box h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section#top #container-box span#price {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+    display: block;
+    margin-bottom: 20px;
+}
+
+section#top #container-box span.color {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+section#top #container-box span.color:last-child {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(0, 137, 207);
+}
+
+section#top #container-box #select-shoe {
+    width: 100%;
+    height: 100px;
+}
+
+section#top #container-box #select-shoe .select-shoe {
+    float: left;
+    margin-right: 10px;
+}
+
+section#top #container-box #select-shoe .select-shoe#shoe-1 {
+    background-image: url('../img/nike/miniature_nike_shoes.png');
+    width: 80px;
+    height: 80px;
+}
+
+section#top #container-box #select-shoe .select-shoe#shoe-2 {
+    background-image: url('../img/nike/miniature_nike_shoes_black.png');
+    width: 80px;
+    height: 80px;
+}
+
+section#top #container-box span#sizecharts {
+    font-size: 12px;
+    font-family: Roboto;
+    color: rgb(102, 102, 102);
+    overflow: hidden;
+    display: block;
+    margin-bottom: 10px;
+}
+
+section#top #container-box #charts {
+    float: left;
+}
+
+select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+}
+
+section#top #container-box #box-cart select#select-size {
+    background-color: rgb(255, 255, 255);
+    width: 125px;
+    height: 50px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    float: left;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+section#top #container-box #box-cart #cart {
+    background-color: rgb(51, 51, 51);
+    width: 125px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 18px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+}
+
+section#top #container-box #box-cart #cart:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 137, 207);
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+section#top #container-box #box-cart #cart:hover:before,
+section#top #container-box #box-cart #cart:focus:before,
+section#top #container-box #box-cart #cart:active:before {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+}
+/* end section top
+
+   section feat1 */
+section#feat1 #container-box {
+    width: 365px;
+    margin-top: 260px;
+    margin-left: 50px;
+}
+
+section#feat1 #container-box h1 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+section#feat1 #container-box p {
+    color: white;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 25px;
+}
+
+
+/* end section feat1
+
+   section feat2 & social */
+
+section#social #container-box,
+section#feat2 #container-box{
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+section#social #container-box h1,
+section#feat2 #container-box h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    margin-top: 10px;
+}
+
+section#social #container-box h2,
+section#feat2 #container-box h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(102, 102, 102);
+}
+
+/* end section feat2 & social
+
+   section #feat2 */
+
+section#feat2 #container-box p {
+    font-family: Roboto;
+    font-weight: 200;
+    color: rgb(102, 102, 102);
+}
+/* end section feat2
+
+   section social */
+
+section#social .swiper-container {
+    margin-top: 40px;
+}
+
+section#social #container-box .swiper-slide {
+    height: 280px;
 }

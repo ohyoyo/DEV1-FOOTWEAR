@@ -2,15 +2,154 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Footwear</title>
+    <title>FOOTWEAR - Air Max Tavas SD</title>
     
+    <!-- meta -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1"/>
+	<meta name="keywords" content="sneakers, athletic shoes, casual shoes, casual clothing">
+	<meta name="author" content="Yoann Di Maria">
+	<meta name="description" content="Basketball Shoes, Casual Shoes, Sneakers, Running Shoes - New Releases & Exclusive Styles from Nike." />
+    
+    <!-- link css -->
     <link rel="stylesheet" href="asset/css/reset.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/swiper.min.css">
     
+    <!-- link javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="asset/js/script.js"></script>
 </head>
 <body>
- 
+    <!-- end header -->
+    <header>
+        <div id="logo"></div>
+            <nav>
+                <ul id="left">
+                    <li id="a">
+                        <a href="#">footwear</a>
+                    </li>
+                    <li id="b">
+                        <a href="#">clothing</a>
+                    </li>
+                    <li id="c">
+                        <a href="#">accessories</a>
+                    </li>
+                    <li id="d">
+                        <a href="#">brands</a>
+                    </li>
+                    <li id="e">
+                        <a href="#">exclusive</a>
+                    </li>
+                </ul>
+                <ul id="right">
+                    <li>
+                        <a href="#"><span id="search"></span>search</a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="carts"></span>cart<span>(2)</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span id="signin"></span>sign in</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <!-- end header -->
+    
+    <!-- section top -->
+    <section id="top">
+        <div id="shoe" content="184"></div>
+        <div id="container-box">
+            <div id="fav"></div>
+            <h2>nike</h2>
+            <h1>air max tavas sd</h1>
+            <meta itemprop="priceCurrency" content="US">
+            <meta itemprop="price" content="160.00">
+            <span id="price">$ 160.00</span><br/>
+            <span class="color">colors - <span class="color">back/pink pow/tour yellow/white</span></span>
+            <div id="select-shoe">
+                <div class="select-shoe choose" id="shoe-1"></div>
+                <div class="select-shoe choose" id="shoe-2"></div>
+            </div>
+            <span id="sizecharts">Size Charts</span>
+            <div id="box-cart">
+                <select id="select-size">
+                    <option  value="">Size</option>
+                    <script>
+                        for(var i=37; i < 46; i++) {
+                            var _tpl = [
+                                '<option name="skuId" value="'+i+'">',
+                                    'EU '+i,
+                                '</option>'
+                            ].join('');
+                            $('select').append(_tpl);
+                        }
+                    </script>
+                </select>
+                <div id="cart">add to cart</div>
+            </div>
+        </div>
+    
+         <div id="sdsf"></div>
+    </section>
+    <!-- end section top -->
+    
+    <!-- section feat1 -->
+    <section id="feat1">
+        <div id="container-box">
+            <h1>classic cushioning. morden comfort.</h1>
+            <p>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and gradient detail offer a comfortable fit and dynamic look.</p>
+        </div>
+    </section>
+    <!-- end section feat1 -->
+    
+    <!-- section feat2 -->
+    <section id="feat2">
+        <div id="container-box">
+            <h2>nike</h2>
+            <h1>nike air max origins</h1>
+            <p>Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</p>
+            <h2>benefits</h2>
+            <h3>layered textile/synthetic upper</h3>
+            <h4>for lightweight durability and comfort</h4>
+            <h3>injected pylon midsole doubles</h3>
+            <h4>Outsole to reduce the overall weight of the shoe</h4>
+            <h3>max air heel unit</h3>
+            <h4>delivers maximum lightweight cushioning</h4>
+            <h3>rubber waffle outsole</h3>
+            <h4>Durable, multi-surface traction</h4>
+         </div>
+    </section>
+    <!-- end section feat2 -->
+    
+    <!-- section social -->
+    <section id="social">
+        <div id="container-box">
+            <h2>social</h2>
+            <h1>#nikeairmax</h1>
+            <!-- carroussel -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <img class="swiper-slide" height="280" src="asset/img/nike/slide-shoe-1.png">
+                    <img class="swiper-slide" src="asset/img/nike/slide-shoe-2.png">
+                    <img class="swiper-slide" src="asset/img/nike/slide-shoe-3.png">
+                    <img class="swiper-slide" src="asset/img/nike/slide-shoe-4.png">
+                </div>
+            </div>
+        </div>
+        <!-- end -->
+    </section>
+    <!-- end section social -->
+    
+    <script src="asset/js/swiper.min.js"></script>
+    
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 4,
+        spaceBetween: 20, 
+        mousewheelControl: true
+    });
+    </script>
 </body>
 </html>
