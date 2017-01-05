@@ -4,7 +4,7 @@
 # FOOTWEAR
 Integrating a Photoshop mockup into HTML/CSS/JS
 ### Demo
-URL demo : [http://dev.yoanndm.fr/dev1/footwear/](http://dev.yoanndm.fr/dev1/footwear/)
+To get all the functionality, do not use Google Chrome locally and open `index.html` in Safari by preference. Otherwise use this [link online](http://dev.yoanndm.fr/dev1/footwear/)
 ### Scoring
 | Instruction             | Grade     |
 |-------------------------|-----------|

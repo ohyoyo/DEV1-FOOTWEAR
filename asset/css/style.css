@@ -9,7 +9,7 @@
 
 body {
     background-color: rgb(200, 207, 220);
-    margin: 50px auto;
+    margin: 50px auto 0px auto;
     font-family: DINNextLTPro;
     width: 1280px;
     
@@ -130,6 +130,10 @@ section#feat1 {
 /* base section feat2 */
 section#feat2 {
     background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
+    background-image: url('../img/bg/feat2bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
     height: 660px;
     overflow: hidden;
@@ -249,21 +253,23 @@ section#top #container-box #charts {
     float: left;
 }
 
-select {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0px;
-}
-
 section#top #container-box #box-cart select#select-size {
     background-color: rgb(255, 255, 255);
     width: 125px;
     height: 50px;
-    color: rgb(102, 102, 102);
-    text-align: center;
-    text-transform: uppercase;
     font-size: 14px;
+    color: rgb(102, 102, 102);
     float: left;
+    background-image: url('../img/svg/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 96px 20px;
     border: 1px solid rgb(228, 228, 228);
+    text-transform: uppercase;
+    margin-right: 5px;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    outline: none;
 }
 
 section#top #container-box #box-cart #cart {
@@ -297,6 +303,7 @@ section#top #container-box #box-cart #cart:before {
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
 section#top #container-box #box-cart #cart:hover:before,
 section#top #container-box #box-cart #cart:focus:before,
 section#top #container-box #box-cart #cart:active:before {
@@ -339,6 +346,10 @@ section#feat2 #container-box{
     margin-right: 50px;
 }
 
+section#feat2 #container-box {
+    width: 365px;
+}
+
 section#social #container-box h1,
 section#feat2 #container-box h1 {
     font-size: 25px;
@@ -352,16 +363,40 @@ section#feat2 #container-box h2 {
     font-size: 14px;
     text-transform: uppercase;
     color: rgb(102, 102, 102);
+    margin-bottom: 10px;
 }
 
 /* end section feat2 & social
 
    section #feat2 */
-
 section#feat2 #container-box p {
     font-family: Roboto;
-    font-weight: 200;
+    color: rgb(51, 51, 51);
+    
+}
+section#feat2 #container-box p#story {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+section#feat2 #container-box h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+section#feat2 #container-box p {
     color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 300;
+    margin: 5px 0px 5px 0px;
+    
 }
 /* end section feat2
 
