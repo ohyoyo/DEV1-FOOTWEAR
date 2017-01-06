@@ -3,18 +3,21 @@
 ---
 # FOOTWEAR
 Integrating a Photoshop mockup into HTML/CSS/JS
+
 ### Demo
 To get all the functionality, do not use *Google Chrome* locally and open `index.html` in *Safari* by preference. Otherwise use this [link online](http://dev.yoanndm.fr/dev1/footwear/)
+
 ### Progress
-- [x] HTML *99%*
-- [x] CSS *86%*
-- [x] Javascript *54%*
+- HTML : ![Progess HTML](http://img.yoanndm.fr/shtml99)
+- CSS : ![Progess CSS](http://img.yoanndm.fr/scss86)
+- Javascript : ![Progess JAVASCRIPT](http://img.yoanndm.fr/sjs54)
 
 ### Functionality
-- [ ] Cookie
+- [ ] Cookie (cart)
 - [ ] Add-to-cart Box
 - [ ] Search
 - [ ] Sign in & Sign up
+- [x] Slider
 
 ### Scoring
 | Instruction             | Grade     |
@@ -30,6 +33,7 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 ___
 ### Final Note
 Final note after correction by the teacher : `/20`
+
 ___
 ###### © Yoann Di Maria , Webstart - Paris
 [![Contact](https://img.shields.io/badge/Contact-Mail-lightgray.svg)](mailto:dm.yoann@gmail.com) 
