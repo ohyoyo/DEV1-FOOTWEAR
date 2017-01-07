@@ -8,9 +8,9 @@ Integrating a Photoshop mockup into HTML/CSS/JS
 To get all the functionality, do not use *Google Chrome* locally and open `index.html` in *Safari* by preference. Otherwise use this [link online](http://dev.yoanndm.fr/dev1/footwear/)
 
 ### Progress
-- HTML : ![Progess HTML](http://img.yoanndm.fr/shtml99)
-- CSS : ![Progess CSS](http://img.yoanndm.fr/scss86)
-- Javascript : ![Progess JAVASCRIPT](http://img.yoanndm.fr/sjs54)
+- HTML : 99%
+- CSS :  86%
+- Javascript : 54%
 
 ### Functionality
 - [ ] Cookie (cart)
