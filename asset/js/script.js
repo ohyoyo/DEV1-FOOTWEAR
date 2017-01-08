@@ -37,22 +37,26 @@ $(document).ready(function() {
     $('.choose').click(function() {
         if($(this).attr('id') == 'shoe-1') {
             $('#shoe').css('background-image', 'url("asset/img/nike/nike_shoes.png")');
+            $('#scroll-container-box #shoe').css('background-image', 'url("asset/img/nike/nike_min.png")');
         }
         else if($(this).attr('id') == 'shoe-2') {
             $('#shoe').css('background-image', 'url("asset/img/nike/nike_shoes_black.png")');
+            $('#scroll-container-box #shoe').css('background-image', 'url("asset/img/nike/nike_black_min.png")');
         }
-        alert(_colorShoe);
     });
     
 // add article to fav
+    if(getCookie('favShoes') != _idShoe) {
+        $('#fav').removeClass('likefav');
+    }
     $('#fav').click(function() {
         if(getCookie('favShoes') == _idShoe) {
+            $('#fav').removeClass('likefav');
             eraseCookie('favShoes');
-            alert('no : '+getCookie('favShoes'));
         }
         else if(getCookie('favShoes') != _idShoe) {
+            $('#fav').addClass('likefav');
             setCookie('favShoes', _idShoe, 30);
-            alert('ok : '+getCookie('favShoes'));
         }
     });
     
@@ -92,8 +96,24 @@ $(document).ready(function() {
     $(window).scroll(ScrollCBox);
     ScrollCBox();
 
+    
 // add article to cart
 
+
+    function editCart() {
+        var cookieCart = getCookie('cart');
+        if(cookieCart) {
+            $('#ccart').text('(1)');
+        }
+    }
+    editCart();
+    
+    $('button#cart').click(function() {
+        setCookie('cart', _idShoe, 30);
+        editCart();
+    });
+    
+    /*
     $('#cart').click(function() {
         
         var d = new Date();
@@ -112,9 +132,7 @@ $(document).ready(function() {
         jsonStr = JSON.stringify(obj);
         setCookie('cart', jsonStr, 2);
         alert('se : '+se+' & nb : '+obj.cart.length+' & e : '+e+' & size : '+obj.cart[0].id0[0].size);
- /*       
- 
- 
+        
  myObj = {
 	"cart":[{
     "id1":[{"type":"shoes","id":"184","size":"34"}],
@@ -138,10 +156,7 @@ var obj = JSON.parse(jsonStr);
 obj['theTeam'].push({"teamId":"4","status":"pending"});
 jsonStr = JSON.stringify(obj);
          var jsonencode = '{"cart":[{"type":"'+type+'", "id":"'+id+'", "size":"'+size+'"}]}';
-     */   
-        
-        
-        /*
+
         // t=shoes&b=airmaxtavassd&s=
         if(getCookie('cart') === null){
             setCookie('cart', cartC('shoes', '184', p), 2);
@@ -153,11 +168,12 @@ jsonStr = JSON.stringify(obj);
             setCookie('cart', cartC('shoes', '184', p)+c, 2);
             
         }
-        $('#sdsf').before(getCookie('cart'));*/
+        $('#sdsf').before(getCookie('cart'));
         //$('#sdsf').before(obj.cart[0].size);
     });
 
 });
 
 //setCookie('cart', cartC('shoes', '184', 38), 2);
-//eraseCookie('cart');
+//eraseCookie('cart');*/
+});
