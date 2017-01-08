@@ -9,13 +9,13 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 
 ### Progress
 - HTML : 99%
-- CSS :  86%
-- Javascript : 54%
+- CSS :  99%
+- Javascript : 86%
 
 ### Functionality
-- [ ] Cookie (cart)
-- [ ] Add-to-cart Box
-- [ ] Search
+- [x] Cookie (cart)
+- [x] Add-to-cart Box
+- [x] Search
 - [ ] Sign in & Sign up
 - [x] Slider
 
