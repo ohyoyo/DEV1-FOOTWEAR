@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -12,7 +12,7 @@ body {
     margin: 50px auto 0px auto;
     font-family: DINNextLTPro;
     width: 1280px;
-    
+    position: relative;
 }
 
 /* base header */
@@ -22,6 +22,7 @@ header {
     width: 100%;
     height: 90px;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 /* end base header
@@ -80,31 +81,69 @@ header ul#right li {
 
 header ul#right li a {
     color: rgb(51, 51, 51);
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
 }
 
 header ul#right li a span {
     color: rgb(0, 137, 207);
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 7px;
 }
 
 header ul#right li a span#search {
-    display: inline-block;
-    background-image: url('../img/header_icon_sprite.png');
+    background-image: url('../img/sprite/icon_.svg');
+    background-repeat: no-repeat;
+    background-size: 46px;
     width: 16px;
     height: 16px;
 }
+
 header ul#right li a span#cart {
-    display: inline-block;
-    background-image: url('../img/header_icon_sprite.png');
-    background-position: 32px 0px;
+    background-image: url('../img/sprite/icon_.svg');
+    background-repeat: no-repeat;
+    background-size: 46px;
+    background-position: -16px 0px;
+    width: 14.5px;
+    height: 14px;
+}
+
+header ul#right li a span#signin {
+    background-image: url('../img/sprite/icon_.svg');
+    background-repeat: no-repeat;
+    background-size: 46px;
+    background-position: -30px 0px;
     width: 16px;
     height: 16px;
 }
-header ul#right li a span#signin {
+
+header ul#right input#search {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 4px;
+    height: 20px;
+    padding-left: 10px;
+    color: rgb(0, 137, 207);
+    font-family: DINNextLTPro;
+    text-transform: uppercase;
+    font-size: 15px;
+    vertical-align: middle;
     display: inline-block;
-    background-image: url('../img/header_icon_sprite.png');
-    background-position: 16px 0px;
-    width: 16px;
-    height: 16px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(0, 137, 207);
+    text-align: right;
+    padding-right: 10px;
+    font-family: DINNextLTPro;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding-top: 4px;
 }
 
 /* end header
@@ -126,6 +165,8 @@ section#feat1 {
     width: 100%;
     height: 660px;
     overflow: hidden;
+    position: relative;
+    z-index: 0;
 }
 /* base section feat2 */
 section#feat2 {
@@ -137,6 +178,7 @@ section#feat2 {
     width: 100%;
     height: 660px;
     overflow: hidden;
+    z-index: 0;
 }
 
 /* base section social */
@@ -145,6 +187,7 @@ section#social {
     width: 100%;
     height: 660px;
     overflow: hidden;
+    z-index: 0;
 }
 
 /* section top */
@@ -212,7 +255,8 @@ section#top #container-box span.color {
     margin-bottom: 10px;
 }
 
-section#top #container-box span.color:last-child {
+section#top #container-box span.color:last-child,
+#scroll-container-box span.color {
     font-size: 14px;
     text-transform: uppercase;
     color: rgb(0, 137, 207);
@@ -310,9 +354,102 @@ section#top #container-box #box-cart #cart:active:before {
       -webkit-transform: translateY(0);
       transform: translateY(0);
 }
+
 /* end section top
 
+   scroll-box */
+
+#scroll-container-box {
+    position: absolute;
+    z-index: 50;
+    width: 292px;
+    height: 422px;
+    background: white;
+    right: 50px;
+    top: 814px;
+    border: 4px solid rgb(228, 228, 228);
+    padding: 20px 26px 26px 26px;
+}
+
+#scroll-container-box #shoe {
+    background-image: url('../img/nike/nike_min.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 260px;
+    height: 122px;
+    margin-left: -13px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
+#scroll-container-box #box-cart {
+    
+}
+
+#scroll-container-box #box-cart select#select-size {
+    background-color: rgb(255, 255, 255);
+    width: 115px;
+    height: 50px;
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    float: left;
+    background-image: url('../img/svg/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 96px 20px;
+    border: 1px solid rgb(228, 228, 228);
+    text-transform: uppercase;
+    margin-right: 0px;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    outline: none;
+}
+
+#scroll-container-box #box-cart #cart {
+    background-color: rgb(51, 51, 51);
+    width: 115px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 18px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+}
+
+#scroll-container-box span#price{
+    color: #333333;
+    font-size: 18px;
+    float: right;
+}
+
+#scroll-container-box span#sizecharts{
+    color: #333333;
+    text-transform: uppercase;
+    font-size 14px;
+}
+
+#scroll-container-box h1 {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+}
+
+#scroll-container-box p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+
+
+/* end scroll-box
+
    section feat1 */
+
 section#feat1 #container-box {
     width: 365px;
     margin-top: 260px;
@@ -334,13 +471,13 @@ section#feat1 #container-box p {
     margin-top: 25px;
 }
 
-
 /* end section feat1
 
    section feat2 & social */
 
 section#social #container-box,
-section#feat2 #container-box{
+section#feat2 #container-box,
+scroll-container-box {
     margin-top: 110px;
     margin-left: 50px;
     margin-right: 50px;
@@ -369,7 +506,8 @@ section#feat2 #container-box h2 {
 /* end section feat2 & social
 
    section #feat2 */
-section#feat2 #container-box p {
+section#feat2 #container-box p,
+#scroll-container-box p {
     font-family: Roboto;
     color: rgb(51, 51, 51);
     

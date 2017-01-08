@@ -1,3 +1,5 @@
 source/
-.DS_Store
+/bin/bash: wq: command not found
 test.html
+.DS_Store
+
