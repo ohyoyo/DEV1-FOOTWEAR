@@ -97,22 +97,37 @@ $(document).ready(function() {
     ScrollCBox();
 
     
-// add article to cart
-
-
-    function editCart() {
-        var cookieCart = getCookie('cart');
-        if(cookieCart) {
-            $('#ccart').text('(1)');
+// cart
+    $('#amycart, #mycart').hover(
+        function() {
+            $('#mycart').show();
+        },
+        function() {
+           $('#mycart').hide();
         }
-    }
-    editCart();
+    );
+
+    
+
+// add article to cart
     
     $('button#cart').click(function() {
         setCookie('cart', _idShoe, 30);
-        editCart();
+        if(getCookie('cart')) {
+            $('#ccart').text('(1)');
+        }
+        $('.container').show();
     });
     
+    $('.remove').click(function() {
+        eraseCookie('cart');
+        $('.container').hide();
+        $('#ccart').text('');
+    });
+    
+    if(getCookie('cart')) {
+        $('#ccart').text('(1)');
+    }
     /*
     $('#cart').click(function() {
         

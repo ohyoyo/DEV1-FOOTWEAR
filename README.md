@@ -9,8 +9,8 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 
 ### Progress
 - HTML : 99%
-- CSS :  99%
-- Javascript : 86%
+- CSS :  95%
+- Javascript : 74%
 
 ### Functionality
 - [x] Cookie (cart)

@@ -7,6 +7,11 @@
     src: url('../font/DINNextLTPro-MediumCond.otf');
 }
 
+@font-face {
+    font-family: Roboto;
+    src: url('../font/Roboto-Light.ttf');
+}
+
 body {
     background-color: rgb(200, 207, 220);
     margin: 50px auto 0px auto;
@@ -64,6 +69,7 @@ header ul li a:hover {
     color: rgb(0, 137, 207);
     padding-bottom: 31px;
     border-bottom: 4px solid rgb(0, 137, 207);
+    transition: all 0.3s;
 }
 
 header ul#right {
@@ -81,19 +87,21 @@ header ul#right li {
 
 header ul#right li a {
     color: rgb(51, 51, 51);
-    vertical-align: middle;
-    display: inline-block;
     text-decoration: none;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 header ul#right li a span {
     color: rgb(0, 137, 207);
-    vertical-align: middle;
+    vertical-align: bottom;
     display: inline-block;
     margin-right: 7px;
 }
 
 header ul#right li a span#search {
+    display: inline-block;
+    vertical-align: bottom;
     background-image: url('../img/sprite/icon_.svg');
     background-repeat: no-repeat;
     background-size: 46px;
@@ -102,6 +110,8 @@ header ul#right li a span#search {
 }
 
 header ul#right li a span#cart {
+    display: inline-block;
+    vertical-align: bottom;
     background-image: url('../img/sprite/icon_.svg');
     background-repeat: no-repeat;
     background-size: 46px;
@@ -111,6 +121,8 @@ header ul#right li a span#cart {
 }
 
 header ul#right li a span#signin {
+    display: inline-block;
+    vertical-align: bottom;
     background-image: url('../img/sprite/icon_.svg');
     background-repeat: no-repeat;
     background-size: 46px;
@@ -120,7 +132,7 @@ header ul#right li a span#signin {
 }
 
 header ul#right input#search {
-    border: 1px solid black;
+    border: none;
     border-radius: 5%;
     padding-top: 4px;
     height: 20px;
@@ -129,16 +141,19 @@ header ul#right input#search {
     font-family: DINNextLTPro;
     text-transform: uppercase;
     font-size: 15px;
-    vertical-align: middle;
+    vertical-align: bottom;
     display: inline-block;
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
     outline: none;
 }
 
+header ul#right input#search:focus {
+    transition: all 1s;
+}
+
 ::-webkit-input-placeholder {
     color: rgb(0, 137, 207);
-    text-align: right;
     padding-right: 10px;
     font-family: DINNextLTPro;
     text-transform: uppercase;
@@ -193,7 +208,6 @@ header #mycart .container .remove {
 header #mycart .container .price {
     
 }
-
 
 /* end header
 
@@ -272,8 +286,8 @@ section#top #container-box #fav {
 
 section#top #container-box #fav:hover,
 section#top #container-box #fav.likefav {
-        background-color: rgb(51, 51, 51);
-        transition: all 1s;
+    background-color: rgb(51, 51, 51);
+    transition: all 1s;
 }
 
 section#top #container-box h2 {
@@ -368,6 +382,7 @@ section#top #container-box #box-cart select#select-size {
 section#top #container-box #box-cart button#cart {
     background-color: rgb(51, 51, 51);
     font-family: DINNextLTPro;
+    outline: none;
     border: none;
     width: 125px;
     height: 50px;
@@ -381,7 +396,8 @@ section#top #container-box #box-cart button#cart {
     overflow: hidden;
 }
 
-section#top #container-box #box-cart button#cart:before {
+section#top #container-box #box-cart button#cart:before,
+#scroll-container-box #box-cart button#cart:before {
     content: "";
     position: absolute;
     left: 0;
@@ -401,7 +417,10 @@ section#top #container-box #box-cart button#cart:before {
 
 section#top #container-box #box-cart button#cart:hover:before,
 section#top #container-box #box-cart button#cart:focus:before,
-section#top #container-box #box-cart button#cart:active:before {
+section#top #container-box #box-cart button#cart:active:before,
+#scroll-container-box #box-cart button#cart:hover:before,
+#scroll-container-box #box-cart button#cart:focus:before,
+#scroll-container-box #box-cart button#cart:active:before {
       -webkit-transform: translateY(0);
       transform: translateY(0);
 }
@@ -434,7 +453,7 @@ section#top #container-box #box-cart button#cart:active:before {
 }
 
 #scroll-container-box #box-cart {
-    
+    margin-top: 15px;
 }
 
 #scroll-container-box #box-cart select#select-size {
@@ -456,15 +475,18 @@ section#top #container-box #box-cart button#cart:active:before {
     outline: none;
 }
 
-#scroll-container-box #box-cart #cart {
+#scroll-container-box #box-cart button#cart {
     background-color: rgb(51, 51, 51);
+    font-family: DINNextLTPro;
+    outline: none;
+    border: none;
     width: 115px;
     height: 50px;
     color: rgb(255, 255, 255);
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    padding-top: 18px;
+    padding-top: 7px;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     overflow: hidden;

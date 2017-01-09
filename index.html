@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="asset/css/swiper.min.css">
     
     <!-- link javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="asset/js/jquery.min.js"></script>
     <script src="asset/js/script.js"></script>
 </head>
 <body>
@@ -45,8 +45,8 @@
                     <li>
                         <a href="#" id="search"><span id="search"></span>search</a>
                     </li>
-                    <li>
-                        <a href="#"><span id="cart"></span>cart <span id="ccart"></span></a>
+                    <li id="amycart">
+                        <a href="#" id="amycart"><span id="cart"></span>cart <span id="ccart"></span></a>
                     </li>
                     <li>
                         <a href="#"><span id="signin"></span>sign in</a>
@@ -103,32 +103,32 @@
     <!-- end section top -->
 
     <!-- scroll box -->
-        <div id="scroll-container-box">
-            <h1>nike</h1>
-            <p>Air max Tavas SD</p>
-            <span class="color">back/pink pow/tour yellow/white</span>
-            <div id="shoe"></div>
-            <meta itemprop="priceCurrency" content="US">
-            <meta itemprop="price" content="160.00">
-            <span id="sizecharts">en stock</span>
-            <span id="price">$ 160.00</span><br/>
-            <div id="box-cart">
-                <select id="select-size">
-                    <option  value="">size</option>
-                    <script>
-                        for(var i=37; i < 46; i++) {
-                            var _tpl = [
-                                '<option name="skuId" value="'+i+'">',
-                                    'EU '+i,
-                                '</option>'
-                            ].join('');
-                            $('select').append(_tpl);
-                        }
-                    </script>
-                </select>
-                <div id="cart">add to cart</div>
-            </div>
+    <div id="scroll-container-box">
+        <h1>nike</h1>
+        <p>Air max Tavas SD</p>
+        <span class="color">back/pink pow/tour yellow/white</span>
+        <div id="shoe"></div>
+        <meta itemprop="priceCurrency" content="US">
+        <meta itemprop="price" content="160.00">
+        <span id="sizecharts">en stock</span>
+        <span id="price">$ 160.00</span><br/>
+        <div id="box-cart">
+        <select id="select-size">
+            <option  value="">size</option>
+            <script>
+                for(var i=37; i < 46; i++) {
+                    var _tpl = [
+                        '<option name="skuId" value="'+i+'">',
+                            'EU '+i,
+                        '</option>'
+                    ].join('');
+                    $('select').append(_tpl);
+                }
+            </script>
+        </select>
+        <button id="cart">add to cart</button>
         </div>
+    </div>
     <!-- end scroll box -->
 
     <!-- section feat1 -->
