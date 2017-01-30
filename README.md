@@ -27,12 +27,12 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 | Animation/Transition    | /1        |
 | Cleanliness of the code | /4        |
 | Following template      | /6        |
-| **Total**               | **/20**   |
+| **Total**               | **18/20** |
 | ``BONUS``               | ``/2``    |
 
 ___
 ### Final Note
-Final note after correction by the teacher : `/20`
+Final note after correction by the teacher : `18/20`
 
 ___
 ###### © Yoann Di Maria , Webstart - Paris
