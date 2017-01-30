@@ -22,13 +22,13 @@ To get all the functionality, do not use *Google Chrome* locally and open `index
 ### Scoring
 | Instruction             | Grade     |
 |-------------------------|-----------|
-| HTML/CSS                | /6        |
-| JS                      | /3        |
-| Animation/Transition    | /1        |
-| Cleanliness of the code | /4        |
-| Following template      | /6        |
-| **Total**               | **18/20** |
-| ``BONUS``               | ``/2``    |
+| HTML/CSS                | 5/6       |
+| JS                      | 2/3       |
+| Animation/Transition    | 1/1       |
+| Cleanliness of the code | 3/4       |
+| Following template      | 5/6       |
+| **Total**               | 17/20     |
+| ``BONUS``               | 1/2       |
 
 ___
 ### Final Note
